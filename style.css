@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/hostel12.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+nav img{
+    width: 240px;
+}  
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 14px;
+}  
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: rgb(246, 255, 0);
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 80%; /* Adjust the width as desired */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 20px; /* Add padding to provide spacing */
+  }
+  
+  .text-box h1 {
+    font-size: 62px;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: white;
+  }
+  
+.About-me-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 100px; 
+    height: 35px;
+}
+.About-me-btn:hover{
+    border:  1px solid rgb(51, 136, 239);
+    background:  rgb(51, 136, 239);
+    transition: 1s;
+}
+/* Rest of your CSS code */
+
+nav .fa-solid {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    /* Styles for mobile devices */
+  
+    .text-box h1 {
+      font-size: 20px;
+    }
+    .nav-links ul li {
+      display: block;
+    }
+    .nav-links {
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa-solid {
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+  }
+  .about{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    padding-top: 80px;
+    background: #f5e7e7;
+    min-height: 100vh;
+  }
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid black; /* Adjust the thickness of the border */
+    width: 30%; /* Adjust the width of the element */
+    margin: 0 auto; /* Center the element horizontally */
+}
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 240px;
+}
+.about-text{
+    flex-basis: 35%;
+    max-width: 600px;
+    background: #f47f7f;
+    border-radius: 10px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-left: -30%;
+    padding: 10px 8px;
+    box-sizing: border-box;
+
+}
+.peshawar-image {
+    flex-basis: 25%; /* Adjust the width of the image container */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 80px;
+    max-width: 600px; /* Limit the width of the image container */
+    margin-right: -30%;
+  }
+  
+  .peshawar-image img {
+    width: 100%; /* Adjust the image width to fill the container */
+    height: auto; /* Automatically adjust the image height while maintaining the aspect ratio */
+    border-radius: 10px;
+  }
+  .contact{
+    width: 100%;
+    height:600px;
+    margin: 50px auto;
+    background: white;
+    text-align: center;
+  }
+  .contact-box{
+    background: wheat;
+    display: flex;
+    margin-top: 105px;
+  }
+  .contactleft{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background: rgb(218, 217, 217);
+  }
+  .contactright{
+    flex-basis: 40%;
+    padding: 40px;
+    background: blue;
+    color: right;
+  }
+  .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .input-row.input-group{
+    flex-basis: 45%;
+  }
+  input{
+    width:100%;
+    border: none;
+    border-bottom: 1.3px solid rgb(0, 0, 0);
+    outline: none;
+    padding-bottom: 5px;
+  }
+  textarea{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  button{
+    background: white;
+    width: 100px;
+    height: 40px;
+    border: 1.2px solid rgb(51, 136, 239);
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  button:hover {
+    background: pink; /* Change the color to your desired hover color */
+    color: black;
+    border: 1.2px solid black;
+    border-radius: 40px;
+    width: 110px;
+    height: 40px;
+    box-shadow: 0px 5px 15px 0px pink;
+  }
+  .contactright{
+    color: white;
+  }
+
+  
+  

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Personal Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fb9c0d7b84.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo-no-background.png" alt="Logo" class="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>    
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ACCOMPLISHMENTS</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+            <div class="text-box">
+                <h1>Welcome</h1>
+                <p>This is Azhar Afif, i am pursuing <br><br>Electrical Engineering at Gik.<br><br>I'd love to know you more <br><br><br></p>
+                <a href="" class="About-me-btn">About me</a>
+
+            </div>
+
+    </section>
+    <section class="about">
+        <div class="about-title">
+        <h1>The man who dreams</h1>
+        </div>
+        <div class="about-content">
+        <div class="about-text">
+        <p>Full name: Azhar Afif <br><br>University: Giki <br><br>Degree: Electrical Engineering <br><br>Age:20 <br><br>Place of Birth: Peshawar <br><br>Favourite food: Italian <br><br>Favourite club: Real Madrid <br><br>Favourite series: Suits <br><br>Favourite anime: Naruto, kingdom, vinland saga</p>
+        </div>
+        <div class="peshawar-image">
+            <img src="images/peshwar.jpg" alt="pekhawar">
+            
+        </div>
+    </div>
+    </section>
+    <section class="contact">
+        <h1>Contact us</h1>
+        <!-- <p>
+            Location: Ghulam ishaq khan institute, Topi, Swabi <br>Email: <br> Github: <br> LinkedIn: <br> Instagram:
+        </p> -->
+        <div class="contact-box">
+            <div class="contactleft">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name: </label>
+                            <input type="text" placeholder="Shurabeel Peerzada">
+                        </div>
+                        <div class="input-group">
+                            <label>Contact: </label>
+                            <input type="text" placeholder="0300xxxxxx1">
+                        </div>
+                        
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Email: </label>
+                        <input type="email" placeholder="u2022135@giki.edu.pk">
+                        </div>
+                        <div class="input-group">
+                        <label>Subject: </label>
+                        <input type="text" placeholder="Meeting timings">
+                        </div>  
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="10" placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contactright">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>u2022135@giki.edu.pk</td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>Giki, Topi, Swabi</td>
+                    </tr>
+                    <tr>
+                        <td>Cell:</td>
+                        <td>03444014141</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu()
+        {navLinks.style.right = "0"}
+        function hideMenu()
+        {navLinks.style.right = "-200px"}
+    </script>
+</body>
+
+
+
+
+
+</html>
